@@ -4,65 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simple Website</title>
+    <title>Motorcycle Store - High-End Bikes</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #ff5733;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
         nav ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
+            text-align: center;
         }
         nav ul li {
-            display: inline;
-            margin-right: 10px;
+            display: inline-block;
+            margin: 0 15px;
         }
         nav ul li a {
-            color: #333;
+            color: white;
             text-decoration: none;
+            font-size: 18px;
         }
-        section {
+        .showcase {
+            text-align: center;
+            padding: 40px;
+            background-color: #34495e;
+            color: white;
+        }
+        .showcase h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .bikes-section {
+            display: flex;
+            justify-content: space-around;
             margin: 20px 0;
+            padding: 20px;
+        }
+        .bike {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 30%;
+            text-align: center;
+        }
+        .bike img {
+            max-width: 100%;
+            height: auto;
+        }
+        .bike h3 {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+        .bike p {
+            padding: 10px;
+            font-size: 16px;
         }
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #34495e;
+            color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Elite Motorcycle Store</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">Bikes</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section>
-        <h2>About This Site</h2>
-        <p>This is a simple HTML website template that I am using for my GitHub project.</p>
+
+    <section class="showcase">
+        <h1>Discover High-End Motorcycles</h1>
+        <p>Check out our top models below!</p>
     </section>
-    
+
+    <section class="bikes-section">
+        <div class="bike">
+            <img src="https://github.com/JosephTheDeveloper/MyRepoActivity8/blob/main/Panigale.jpg" alt="Motorcycle 1">
+            <h3>Ducati Panigale V4</h3>
+            <p>The ultimate superbike, packed with a 1103cc Desmosedici Stradale engine.</p>
+        </div>
+        <div class="bike">
+            <img src="https://github.com/JosephTheDeveloper/MyRepoActivity8/blob/main/BMW.jpg" alt="Motorcycle 2">
+            <h3>BMW S1000RR</h3>
+            <p>A beast on the track, with a 999cc inline-four engine delivering maximum performance.</p>
+        </div>
+        <div class="bike">
+            <img src="https://github.com/JosephTheDeveloper/MyRepoActivity8/blob/main/Ninja.jpg" alt="Motorcycle 3">
+            <h3>Kawasaki Ninja H2</h3>
+            <p>This powerhouse comes with a supercharged 998cc engine, delivering unmatched speed and acceleration.</p>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <p>&copy; 2024 Elite Motorcycle Store | All Rights Reserved</p>
     </footer>
+
 </body>
 </html>
